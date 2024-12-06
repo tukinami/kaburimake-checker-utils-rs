@@ -1,0 +1,11 @@
+charset,UTF-8
+name,testInvalidShift_JIS
+id,testInvalidShift_JIS
+type,ghost
+craftman,tukinami seika
+craftmanw,月波 清火
+
+sakura.name,テストsakura
+kero.name,テストkero
+
+shiori,yaya.dll

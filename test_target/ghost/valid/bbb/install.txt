@@ -1,0 +1,6 @@
+charset,Shift_JIS
+name,ƒeƒXƒgBBB
+type,ghost
+
+directory,bbb
+

@@ -1,0 +1,11 @@
+charset,EUC-JP
+name,testValidUEUC-JP
+id,testValidEUC-JP
+type,ghost
+craftman,tukinami seika
+craftmanw,月波 清火
+
+sakura.name,テストsakura
+kero.name,テストkero
+
+shiori,yaya.dll

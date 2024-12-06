@@ -1,0 +1,10 @@
+charset,Shift_JIS
+name,ƒeƒXƒgBBB
+id,BBB
+type,ghost
+craftman,tukinami seika
+craftmanw,Œ”g ´‰Î
+
+sakura.name,‚³‚­‚çBBB
+
+shiori,yaya.dll

@@ -1,0 +1,11 @@
+charset,UTF-8
+name,テストAAA
+id,AAA
+type,ghost
+craftman,tukinami seika
+craftmanw,月波 清火
+
+sakura.name,さくらAAA
+kero.name,ケロAAA
+
+shiori,yaya.dll

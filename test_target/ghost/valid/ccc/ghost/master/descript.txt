@@ -1,0 +1,11 @@
+charset,EUC-JP
+name,テストCCC
+id,CCC
+type,ghost
+craftman,tukinami seika
+craftmanw,月波 清火
+
+sakura.name,さくらCCC
+kero.name,ケロCCC
+
+shiori,yaya.dll

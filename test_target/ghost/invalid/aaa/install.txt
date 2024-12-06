@@ -1,0 +1,5 @@
+charset,UTF-8
+name,テストAAA
+type,ghost
+
+directory,aaa

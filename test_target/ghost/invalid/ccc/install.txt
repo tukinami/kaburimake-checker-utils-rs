@@ -1,0 +1,4 @@
+charset,EUC-JP
+name,¥Æ¥¹¥ÈCCC
+type,ghost
+

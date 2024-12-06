@@ -1,0 +1,18 @@
+[package]
+name = "kaburimake-checker-utils-rs"
+version = "0.1.0"
+edition = "2021"
+authors = [ "tukinami seika" ]
+license = "MIT"
+readme = "README.md"
+description = "Utility tool for kaburimake-checker-ts."
+
+[dependencies]
+clap = { version = "4.5.22", features = ["derive"] }
+chrono = "0.4.38"
+serde_json = "1.0.133"
+encoding_rs = "0.8.35"
+serde = { version = "1.0.215", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "3.14.0"

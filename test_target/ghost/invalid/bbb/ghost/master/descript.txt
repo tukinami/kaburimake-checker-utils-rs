@@ -1,0 +1,10 @@
+charset,Shift_JIS
+name,テストBBB
+id,BBB
+type,ghost
+craftman,tukinami seika
+craftmanw,月波 清火
+
+kero.name,ケロBBB
+
+shiori,yaya.dll
