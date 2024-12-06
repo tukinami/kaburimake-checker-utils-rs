@@ -1,4 +1,4 @@
-use std::path::{Path, PathBuf};
+use std::path::Path;
 
 use chrono::Utc;
 
@@ -33,7 +33,7 @@ pub(crate) fn read_ghost_collection<P>(dir_path: P) -> Option<Vec<GhostData>>
 where
     P: AsRef<Path>,
 {
-    let dir_path = PathBuf::new().join(&dir_path);
+    let dir_path = dir_path.as_ref();
     let entries = match dir_path.read_dir() {
         Ok(v) => v,
         Err(e) => {
@@ -103,7 +103,7 @@ fn read_directory_name_from_installtxt<P>(root: P) -> Result<Option<String>, std
 where
     P: AsRef<Path>,
 {
-    let path = PathBuf::new().join(root).join("install.txt");
+    let path = root.as_ref().join("install.txt");
     if !path.is_file() {
         return Ok(None);
     }
@@ -121,9 +121,7 @@ fn read_names_from_descript<P>(dir_path: P) -> Result<(String, String), std::io:
 where
     P: AsRef<Path>,
 {
-    let path = PathBuf::new()
-        .join(&dir_path)
-        .join("ghost/master/descript.txt");
+    let path = dir_path.as_ref().join("ghost/master/descript.txt");
     if !path.is_file() {
         return Err(std::io::Error::from(std::io::ErrorKind::InvalidData));
     }
@@ -155,6 +153,8 @@ mod tests {
     use super::*;
 
     mod build {
+        use std::path::PathBuf;
+
         use tempfile::tempdir;
 
         use crate::io::load_json;
@@ -197,6 +197,8 @@ mod tests {
     }
 
     mod read_ghost_collection {
+        use std::path::PathBuf;
+
         use super::*;
 
         #[test]
@@ -231,6 +233,8 @@ mod tests {
     }
 
     mod read_directory_name {
+        use std::path::PathBuf;
+
         use super::*;
 
         #[test]
@@ -258,6 +262,8 @@ mod tests {
     }
 
     mod read_directory_name_from_installtxt {
+        use std::path::PathBuf;
+
         use super::*;
 
         #[test]
@@ -284,6 +290,8 @@ mod tests {
     }
 
     mod read_names_from_descript {
+        use std::path::PathBuf;
+
         use super::*;
 
         #[test]
